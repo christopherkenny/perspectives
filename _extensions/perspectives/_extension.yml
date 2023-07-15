@@ -12,6 +12,7 @@ contributes:
         - "CUP-JNL-PPS.cls"
         - "orcid_logo.eps"
       template-partials:
+        - "partials/title.tex"
         - "partials/doc-class.tex"
         - "partials/before-body.tex"
 

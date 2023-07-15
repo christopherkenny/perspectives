@@ -26,11 +26,12 @@ acknowledgements: |
   We are grateful for the technical assistance of A. Author.
 keywords: [template, demo]
 bibliography: bibliography.bib
+word-count: 500
 ---
 
 ## Introduction {#sec-intro}
 
-\dropcap{Thanks} for using Quarto to write your article. This Quarto template is unofficial and based on Overleaf's Perspectives on Politics template. Your introduction goes here. Make sure the first paragraph here is at least three lines long, to accommodate the dropped-cap. Some examples of commonly used commands and features are listed below, to help you get started.
+\dropcap{T}hanks for using Quarto to write your article. This Quarto template is unofficial and based on Overleaf's Perspectives on Politics template. Your introduction goes here. Make sure the first paragraph here is at least three lines long, to accommodate the dropped-cap. Some examples of commonly used commands and features are listed below, to help you get started.
 
 Since we are in Quarto, you can cite with an `@` symbol, like @knuth1984texbook. As seen below, you can mix markdown and Latex with each other, though it's likely best to mostly use markdown.
 
@@ -42,6 +43,11 @@ To reference a section, such as the Introduction (@sec-intro), use `@sec-intro`.
 
 For complete information on cross referencing with Quarto, see <https://quarto.org/docs/authoring/cross-references.html>.
 
+## Citations
+
+Quarto formats citations and references automatically using the bibliography records in your .bib file. For a citation in parentheses use [@greenwade93] and for a text citation: @greenwade93. Multiple citations can be given as [@greenwade93;@knuth1984texbook]. Drop the author like so [-@greenwade93].
+
+
 ## Tables and Figures
 
 To include figures, you can use Quarto syntax.
@@ -49,10 +55,6 @@ To include figures, you can use Quarto syntax.
 ![Example figure](sample-fig.eps){#fig-plot}
 
 For both figures and tables, you can use LaTeX syntax if you need additional customizability. 
-
-## Citations
-
-Quarto formats citations and references automatically using the bibliography records in your .bib file. For a citation in parentheses use [@greenwade93] and for a text citation: @greenwade93. Multiple citations can be given as [@greenwade93;@knuth1984texbook]. Drop the author like so [-@greenwade93].
 
 ## Conclusion
 
@@ -82,3 +84,8 @@ All authors approved the final submitted draft.
 
 #### Supplementary Material
 State whether any supplementary material intended for publication has been provided with the submission.
+
+## References
+<!-- the pattern below controls the placement of the references -->
+:::{#refs}
+:::

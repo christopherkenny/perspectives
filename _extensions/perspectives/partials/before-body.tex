@@ -2,7 +2,7 @@
 %TC:ignore
 \begin{Frontmatter}
 $if(title)$
-\title{$title$%
+\title$if(runningtitle)$[$runningtitle$]$endif${$title$%
 $if(acknowledgements)$\thanks{$acknowledgements$}$endif$
 }
 $endif$
@@ -19,15 +19,12 @@ $if(by-author.affiliations)$
       $endif$
     $endfor$
   $endif$
+  }
 $endfor$
 
 $if(abstract)$
-\begin{abstract}
-$abstract$
-\end{abstract}
+\abstract{$abstract$}
 $endif$
-
-$if(acknowledgements)$\thanks{$acknowledgements$}$endif$
 
 \end{Frontmatter}
 %TC:endignore
