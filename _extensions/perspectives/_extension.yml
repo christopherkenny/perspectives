@@ -7,7 +7,7 @@ contributes:
     common:
       toc: false
     pdf:
-      include-in-header: header.tex\
+      include-in-header: header.tex
       format-resources:
         - "CUP-JNL-PPS.cls"
         - "orcid_logo.eps"
