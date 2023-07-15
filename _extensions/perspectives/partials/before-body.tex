@@ -2,20 +2,22 @@
 %TC:ignore
 \begin{Frontmatter}
 $if(title)$
-\title$if(runningtitle)$[$runningtitle$]$endif${$title$%
-$if(acknowledgements)$\thanks{$acknowledgements$}$endif$
-}
+\title$if(runningtitle)$[$runningtitle$]$endif${$title$}
+$endif$
+
+$if(acknowledgements)$
+\thanks{$acknowledgements$}
 $endif$
 
 $for(by-author)$
-\author{$by-author.name.literal$
+\author{$by-author.name.literal$%
 $if(by-author.affiliations)$
     $for(by-author.affiliations)$
       $if(by-author.affiliations.name)$
-         , $by-author.affiliations.name$
+        , $by-author.affiliations.name$%
       $endif$
       $if(by-author.affiliations.country)$
-         , $by-author.affiliations.country$
+        , $by-author.affiliations.country$%
       $endif$
     $endfor$
   $endif$
