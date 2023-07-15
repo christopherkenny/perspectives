@@ -1,0 +1,33 @@
+%% When using autowc (automatic wordcount, you can use %TC:ignore and %TC:endignore blocks to mark regions of text that should be omitted from counting.)
+%TC:ignore
+\begin{frontmatter}
+$if(title)$
+\title{$title$%
+$if(acknowledgements)$\thanks{$acknowledgements$}$endif$
+}
+$endif$
+
+$for(by-author)$
+\author{$by-author.name.literal$
+$if(by-author.affiliations)$
+    $for(by-author.affiliations)$
+      $if(by-author.affiliations.name)$
+         , $by-author.affiliations.name$
+      $endif$
+      $if(by-author.affiliations.country)$
+         , $by-author.affiliations.country$
+      $endif$
+    $endfor$
+  $endif$
+$endfor$
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+$if(acknowledgements)$\thanks{$acknowledgements$}$endif$
+
+\end{frontmatter}
+%TC:endignore

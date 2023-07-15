@@ -1,0 +1,84 @@
+---
+title: Perspectives on Politics Quarto Template
+format:
+  perspectives-pdf:
+    keep-tex: true  
+runningtitle: Perspectives Quarto
+author:
+  - name: Author One
+    affiliations:
+      - name: An Organization
+    note: "Author One is PhD Candidate, ABC Department, Affiliation A, 12345 NY. (a.1@example.edu)"
+  - name: Author Two
+    affiliations:
+      - Affiliation B
+    note: "Author Two is Assistant Professor, Faculty of Z, Affiliation B, 42813. Corresponding Author (a.2@acme.edu) Additional notes about Author Two."
+  - name: Author Three
+    affiliations:
+      - A Third Organization
+    note: "Author Three is ..."
+abstract: |
+  Abstracts should be 250 words. It must be able to stand alone and so cannot 
+  contain citations to the paper's references, equations, etc. An abstract must 
+  consist of a single paragraph and be concise. Because of online formatting, 
+  abstracts must appear as plain as possible.
+acknowledgements: |
+  We are grateful for the technical assistance of A. Author.
+keywords: [template, demo]
+bibliography: bibliography.bib
+---
+
+## Introduction {#sec-intro}
+
+\dropcap{Thanks} for using Quarto to write your article. This Quarto template is unofficial and based on Overleaf's Perspectives on Politics template. Your introduction goes here. Make sure the first paragraph here is at least three lines long, to accommodate the dropped-cap. Some examples of commonly used commands and features are listed below, to help you get started.
+
+Since we are in Quarto, you can cite with an `@` symbol, like @knuth1984texbook. As seen below, you can mix markdown and Latex with each other, though it's likely best to mostly use markdown.
+
+## Cross Referencing
+
+To reference a figure with example label "plot", use `@fig-plot`. 
+Analogously, to reference a table with example label "data", use `@tbl-data`.
+To reference a section, such as the Introduction (@sec-intro), use `@sec-intro`.
+
+For complete information on cross referencing with Quarto, see <https://quarto.org/docs/authoring/cross-references.html>.
+
+## Tables and Figures
+
+To include figures, you can use Quarto syntax.
+
+![Example figure](sample-fig.eps){#fig-plot}
+
+For both figures and tables, you can use LaTeX syntax if you need additional customizability. 
+
+## Citations
+
+Quarto formats citations and references automatically using the bibliography records in your .bib file. For a citation in parentheses use [@greenwade93] and for a text citation: @greenwade93. Multiple citations can be given as [@greenwade93;@knuth1984texbook]. Drop the author like so [-@greenwade93].
+
+## Conclusion
+
+The paper should conclude and then have any relevant subset of the following pieces.
+
+#### Funding Statement
+This research was supported by grants from the <funder-name><doi>(<award ID>); <funder-name><doi>(<award ID>).
+
+#### Competing Interests
+A statement about any financial, professional, contractual or personal relationships or situations that could be perceived to impact the presentation of the work --- or "None" if none exist
+
+#### Data Availability Statement
+A statement about how to access data, code and other materials allowing users to understand, verify and replicate findings --- e.g. 
+Replication data and code can be found in Harvard Dataverse: <https://doi.org/link>.
+
+#### Ethical Standards
+The research meets all ethical guidelines, including adherence to the legal requirements of the study country.
+
+#### Author Contributions
+Please provide an author contributions statement using the CRediT taxonomy roles as a guide <https://www.casrai.org/credit.html>. 
+Conceptualization: A.A; A.B. 
+Methodology: A.A; A.B. 
+Data curation: A.C. 
+Data visualisation: A.C. 
+Writing original draft: A.A; A.B. 
+All authors approved the final submitted draft.
+
+#### Supplementary Material
+State whether any supplementary material intended for publication has been provided with the submission.
