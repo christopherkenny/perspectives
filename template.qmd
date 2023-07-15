@@ -8,15 +8,15 @@ author:
   - name: Author One
     affiliations:
       - name: An Organization
-    note: "Author One is PhD Candidate, ABC Department, Affiliation A, 12345 NY. (a.1@example.edu)"
+      - country: USA
   - name: Author Two
     affiliations:
       - Affiliation B
-    note: "Author Two is Assistant Professor, Faculty of Z, Affiliation B, 42813. Corresponding Author (a.2@acme.edu) Additional notes about Author Two."
+      - country: USA
   - name: Author Three
     affiliations:
       - A Third Organization
-    note: "Author Three is ..."
+      - country: USA
 abstract: |
   Abstracts should be 250 words. It must be able to stand alone and so cannot 
   contain citations to the paper's references, equations, etc. An abstract must 

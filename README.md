@@ -28,14 +28,15 @@ format:
 
 ## Options
 
-*TODO*: If your format has options that can be set via document metadata, describe them.
+- `runningtitle`: A short title that goes on the header of each page
+- `word-count`: A word count for the document
 
 ## Example
 
 Here is the source code for a minimal sample document: [template.qmd](template.qmd).
 
-<!-- pdftools::pdf_convert('template.pdf',pages = 1) 
-![[template.qmd](template.qmd)](template_1.png) -->
+<!-- pdftools::pdf_convert('template.pdf',pages = 1) -->
+![[template.qmd](template.qmd)](template_1.png) 
 
 ## License
 
